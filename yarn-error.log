@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/local/bin/node /Users/xiaozisong/.yarn/bin/yarn.js
+
+PATH: 
+  /Users/xiaozisong/.yarn/bin:/Users/xiaozisong/.config/yarn/global/node_modules/.bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/xiaozisong/.yarn/bin:/Users/xiaozisong/.config/yarn/global/node_modules/.bin:/opt/local/bin:/opt/local/sbin:/Users/xiaozisong/.cargo/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/lerna: tunneling socket could not be established, cause=connect ECONNREFUSED 127.0.0.1:80
+      at ClientRequest.onError (/Users/xiaozisong/.yarn/lib/cli.js:152376:17)
+      at Object.onceWrapper (node:events:642:26)
+      at ClientRequest.emit (node:events:527:28)
+      at Socket.socketErrorListener (node:_http_client:454:9)
+      at Socket.emit (node:events:527:28)
+      at emitErrorNT (node:internal/streams/destroy:157:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "root",
+    "private": true,
+    "workspaces": [ 
+      "packages/*"
+    ],
+    "devDependencies": {
+      "lerna": "^4.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
