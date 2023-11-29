@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 命令行解析工具 
+// 命令行解析工具 初始化booster
 const program = require('commander');
 
 program
