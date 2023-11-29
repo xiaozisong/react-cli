@@ -28,5 +28,8 @@
   },
   "bugs": {
     "url": "https://github.com/xiaozisong/react-cli/issues"
+  },
+  "dependencies": {
+    "commander": "^11.1.0"
   }
 }
