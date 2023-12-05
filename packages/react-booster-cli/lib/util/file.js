@@ -14,7 +14,6 @@ function deleteRemovedFiles (directory, newFiles, previousFiles) {
   }))
 }
 
-
 /**
  * @param {*} dir 目标目录
  * @param {*} files 文件路径为key， 文件内容为value eg:{'/a/b', 'file-text'}
