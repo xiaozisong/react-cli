@@ -9,6 +9,7 @@ function deleteRemovedFiles (directory, newFiles, previousFiles) {
 
   // 删除当前文件中的每一个
   return Promise.all(filesToDelete.map(filename => {
+    // 删除
     return fs.unlink(path.join(directory, filename))
   }))
 }
@@ -25,7 +26,9 @@ async function writeFileTree (dir, files, previousFiles) {
   }
   Object.keys(files).forEach((name) => {
     const filePath = path.join(dir, name);
+    // 判断目录是否存在，否则创建目录
     fs.ensureDirSync(path.dirname(filePath));
+    // 将数据写入文件中
     fs.writeFileSync(filePath, files[name])
   })
 }
