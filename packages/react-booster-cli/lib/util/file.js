@@ -28,7 +28,7 @@ async function writeFileTree (dir, files, previousFiles) {
     const filePath = path.join(dir, name);
     // 判断目录是否存在，否则创建目录
     fs.ensureDirSync(path.dirname(filePath));
-    // 将数据写入文件中
+    // 将数据写入文件中 行成文件树
     fs.writeFileSync(filePath, files[name])
   })
 }
