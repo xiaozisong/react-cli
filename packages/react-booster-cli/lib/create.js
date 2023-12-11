@@ -12,7 +12,7 @@ const ora = require('ora');
 // 输出增色
 const chalk = require('chalk');
 // 检测版本
-const checkVersion = requrie('./check-version');
+const checkVersion = require('./check-version');
 
 const generate = require('./generate');
 

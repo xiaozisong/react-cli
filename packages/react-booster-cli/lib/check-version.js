@@ -2,7 +2,7 @@
 const request = require('request');
 const semver = require('semver');
 const chalk = require('chalk');
-const packageConfig = requrie('../package.json');
+const packageConfig = require('../package.json');
 
 module.exports = function checkVersion () {
   return new Promise((resolve, reject) => {

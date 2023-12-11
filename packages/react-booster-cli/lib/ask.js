@@ -31,10 +31,10 @@ const questions = [
     message: '您希望安装的状态管理库是?',
     choices: [{
       name: 'mobx',
-      value: mobx,
+      value: 'mobx',
     }, {
       name: 'redux',
-      value: redux,
+      value: 'redux',
     }]
   },
   {
